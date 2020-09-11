@@ -16,7 +16,7 @@ void BresenhamLineAlgo(int x1,int y1, int x2,int y2){
     int X=x1, Y=y1, k=0,Pk;
 
     while(k<abs(dX)){
-        printf("k=%2d, Pk=%3d xy(%2d,%2d)\n",k, Pk, X,Y);
+        printf("k=%2d, Pk=%4d xy(%2d,%2d)\n",k, Pk, X,Y);
         if (m==true) putpixel (X,Y,YELLOW);
         else putpixel (Y,X,YELLOW);
         delay(10);//So that we can see how draw line
@@ -47,5 +47,3 @@ int main(){
     }
 	return 0;
 }
-
-
