@@ -62,7 +62,7 @@ void CandidateTheLine(int initBits,float x1,float y1, int termBits,float x2,floa
 }
 int main(){
     int bt=0;
-    bt|=(1<<0);
+    bt=bt|(1<<0);
     printf("%d\n",bt);
     int gd = DETECT, gm;
 	initgraph (&gd, &gm, "");//Initialize graphics function
